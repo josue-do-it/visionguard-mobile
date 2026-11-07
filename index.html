@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1020"><meta name="description" content="Tableau de bord mobile VisionGuard AI">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+<title>VisionGuard AI — Project tracker</title>
+</head>
+<body>
+<header class="top"><div class="brand"><div class="mark">VG</div><div><strong>VISIONGUARD <span>AI</span></strong><small>YOLO · BDD100K · MODEL AUDIT</small></div></div><span class="status"><i></i> PORTFOLIO PROJECT</span></header>
+<main>
+<section class="hero"><p class="eyebrow">YOUR RESEARCH WORKSPACE</p><h1>Audit a model.<br><em>Understand its limits.</em></h1><p class="muted">Un suivi structuré de l'audit de bout en bout d'un détecteur YOLO sur BDD100K.</p>
+<div class="progress-card"><div class="progress-head"><div><small>PROGRESSION GLOBALE</small><div class="big" id="progressText">0<span>%</span></div></div><div class="ring" id="ring"><b id="ringText">0%</b></div></div><div class="track"><div id="progressBar"></div></div><p class="muted tiny" id="progressMeta">0 module sur 10 terminé</p></div></section>
+<section class="section-head"><div><p class="eyebrow">THE ROADMAP</p><h2>Modules du projet</h2></div><button class="quiet" id="exportBtn">Exporter JSON ↗</button></section>
+<div id="modules" class="modules"></div>
+<section class="panel"><p class="eyebrow">THIS WEEK</p><h2>Objectif de la semaine</h2><textarea id="weeklyGoal" rows="3" placeholder="Définir un objectif concret, mesurable et vérifiable…"></textarea><p class="hint">Privilégier un livrable démontrable : script, test, tableau ou rapport.</p></section>
+<section class="panel"><p class="eyebrow">LAB NOTEBOOK</p><h2>Journal de bord</h2><textarea id="note" rows="4" placeholder="Date, expérience, configuration, résultat observé, limites…"></textarea><div class="actions"><button id="saveNote">Enregistrer la note</button><span class="hint" id="savedState">Stockage local sur cet appareil</span></div><div id="notes" class="notes"></div></section>
+<section class="panel"><p class="eyebrow">REPRODUCIBILITY CHECK</p><h2>Avant de valider un résultat</h2><ul class="checks"><li>Split réalisé par séquence vidéo / scène.</li><li>Jeu de test jamais utilisé pour choisir le modèle.</li><li>Erreurs d'annotation suspectées vérifiées manuellement.</li><li>Seeds, versions, config et commandes conservés.</li><li>Aucun résultat ni métrique inventé.</li></ul></section>
+<section class="panel repo"><p class="eyebrow">SOURCE CODE</p><h2>GitHub repository</h2><a href="https://github.com/josue-do-it/visionguard-mobile" target="_blank" rel="noreferrer">josue-do-it / visionguard-mobile ↗</a><p class="hint">Les données de suivi sont conservées dans le stockage local du navigateur. Pas de synchronisation cloud.</p><button class="danger" id="resetBtn">Réinitialiser le suivi</button></section>
+</main><footer>VISIONGUARD AI <span>·</span> BUILD WITH DISCIPLINE</footer>
+<script src="./app.js"></script>
+</body></html>
